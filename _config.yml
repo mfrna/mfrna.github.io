@@ -17,6 +17,6 @@ url: https://mfrna.github.io
 twitter_username: mfrna
 github_username: mfrna
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: Cayman
 plugins:
 - jekyll-feed
