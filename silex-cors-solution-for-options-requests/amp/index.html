@@ -247,7 +247,7 @@ pre{ white-space: pre-wrap; }
     transform-origin: right center;*/
 }
 /* Sidebar */
-#sidebar[open]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
+#sidebar[aria-hidden="false"]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
 @keyframes opening{ 0% { transform: translate3d(0, 0, 0) scale(1); } 100% { transform: translate3d(60%, 0, 0) scale(0.8); } }
 @keyframes closing{ 0% { transform: translate3d(60%, 0, 0) scale(0.8); } 100% { transform: translate3d(0, 0, 0) scale(1); } }
 @keyframes closingFix{ 0% { max-height: 100vh; overflow: hidden; } 100% { max-height: none; overflow: visible; } }
@@ -278,9 +278,9 @@ pre{ white-space: pre-wrap; }
 .toast span{ opacity: 1; top: 24px; -webkit-transition: all ease-in-out .4s; transition: all ease-in-out .4s; }
 .toast:before{ top: 17px; }
 .toast:after{ top: 31px; }
-#sidebar[open]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
-#sidebar[open]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
-#sidebar[open]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
+#sidebar[aria-hidden="false"]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
+#sidebar[aria-hidden="false"]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
+#sidebar[aria-hidden="false"]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
 
 /* CSS3 icon */
 [class*=icono-]{ display: inline-block; vertical-align: middle; position: relative; font-style: normal; color: #f42; text-align: left; text-indent: -9999px; direction: ltr }
@@ -554,17 +554,17 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 <p>To fix this, an OPTIONS route needed to be created for each of the application routes. Many providers solve this by looping through each route defined in your app and creating a corresponding OPTIONS route. Even for small apps, however, this is adding unnecessary processing and for large apps with lots of routes it is even slower.</p>
 <p>To get around this, I’ve added two bits of code to my application. The first in bootstrap/app file.</p>
 <div class="highlight">
-<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-></span><span class="na">after</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">,</span> <span class="nx">Response</span> <span class="nv">$response</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nv">$response</span><span class="o">-></span><span class="na">headers</span><span class="o">-></span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Origin'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">);</span>
-        <span class="nv">$response</span><span class="o">-></span><span class="na">headers</span><span class="o">-></span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Headers'</span><span class="p">,</span> <span class="s1">'Authorization'</span><span class="p">);</span>
+<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-&gt;</span><span class="na">after</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">,</span> <span class="nx">Response</span> <span class="nv">$response</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">headers</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Origin'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">);</span>
+        <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">headers</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Headers'</span><span class="p">,</span> <span class="s1">'Authorization'</span><span class="p">);</span>
     <span class="p">});</span></code></pre>
 </div>
 <p>What this does is add two headers to all responses after the controller has finished executing but before the response is returned. Here we’ve added the <code>Access-Control-Allow-Origin</code> header the javascript app is looking for. I’m also telling the app that sending an <code>Authorization</code> header is fine too. You can remove that line if you don’t need it.</p>
 <p>We still have an issue though, all of the <code>GET</code> and <code>POST</code> requests defined in the routes will have the correct headers, but Silex still doesn’t know what to do with the <code>OPTIONS</code> requests. Fixing that is as easy as adding the following snippet to your routes files.</p>
 <div class="highlight">
-<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-></span><span class="na">options</span><span class="p">(</span><span class="s2">"{path}"</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-&gt;</span><span class="na">options</span><span class="p">(</span><span class="s2">"{path}"</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
         <span class="k">return</span> <span class="k">new</span> <span class="nx">\Symfony\Component\HttpFoundation\JsonResponse</span><span class="p">(</span><span class="k">null</span><span class="p">,</span> <span class="mi">204</span><span class="p">);</span>
-    <span class="p">})</span><span class="o">-></span><span class="na">assert</span><span class="p">(</span><span class="s2">"path"</span><span class="p">,</span> <span class="s2">".*"</span><span class="p">);</span></code></pre>
+    <span class="p">})</span><span class="o">-&gt;</span><span class="na">assert</span><span class="p">(</span><span class="s2">"path"</span><span class="p">,</span> <span class="s2">".*"</span><span class="p">);</span></code></pre>
 </div>
 <p>All we’re doing here is matching against any <code>OPTIONS</code> requests and returning a <code>204</code> response with no content. The code we added earlier will still apply to this response so our headers are correct. If needed, you can check inside the function to see whether the URL matches a URL in your non <code>OPTIONS</code> routes.</p>
 	</div>
@@ -581,7 +581,7 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 </div> 
 	<div class="amp-wp-content amp_author_area ampforwp-meta-taxonomy">
 	    <div class="amp_author_area_wrapper">
-	        	                    <amp-img src="https://secure.gravatar.com/avatar/9aef19b4e302bfb911f36913c43282ed?s=70&d=mm&r=g" width="70" height="70" layout="fixed"></amp-img><strong> mfrna</strong>:  	    </div>
+	        	                    <amp-img src="http://0.gravatar.com/avatar/9aef19b4e302bfb911f36913c43282ed?s=70&d=mm&r=g" width="70" height="70" layout="fixed"></amp-img><strong> mfrna</strong>:  	    </div>
 	</div> <div class="amp-wp-content ampforwp-social-icons-wrapper ampforwp-social-icons">
     <i class="icono-share"></i>
     										<div class="ampforwp-custom-social">
@@ -709,5 +709,5 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 			</a>
 																													
 	</div> 
-		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"https:\/\/blog.mfrna.com\/silex-cors-solution-for-options-requests\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"Silex CORS solution for OPTIONS requests","author":{"@type":"Person","name":"mfrna","image":"https:\/\/secure.gravatar.com\/avatar\/9aef19b4e302bfb911f36913c43282ed?s=50&d=mm&r=g"},"datePublished":"2017-12-28T14:54:58+00:00","dateModified":"2018-01-02T18:18:43+00:00","image":{"@type":"ImageObject","url":"https:\/\/blog.mfrna.com\/wp-content\/uploads\/2017\/12\/silex-1280x720.png","width":1280,"height":720},"description":"Recently, I have worked on a cross platform app that needed a php back end.…"}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"https:\/\/blog.mfrna.com\/silex-cors-solution-for-options-requests\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"Silex CORS solution for OPTIONS requests","author":{"@type":"Person","name":"mfrna","image":"http:\/\/0.gravatar.com\/avatar\/9aef19b4e302bfb911f36913c43282ed?s=50&d=mm&r=g"},"datePublished":"2017-12-28T14:54:58+00:00","dateModified":"2018-01-02T18:18:43+00:00","image":{"@type":"ImageObject","url":"https:\/\/blog.mfrna.com\/wp-content\/uploads\/2017\/12\/silex-1280x720.png","width":1280,"height":720},"description":"Recently, I have worked on a cross platform app that needed a php back end.…"}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
 					{"vars":{"account":"UA-98475264-1","anonymizeIP":"true"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}				</script></amp-analytics></body></html>
