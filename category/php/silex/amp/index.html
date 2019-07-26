@@ -23,14 +23,14 @@ ol, ul {list-style-position: inside;}
     font-display: swap;
     font-style: normal;
     font-weight: 400;
-    src:  local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Regular.ttf');
+    src:  local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Regular.ttf');
 }
 @font-face {
     font-family: 'Roboto Slab';
     font-display: swap;
     font-style: normal;
     font-weight: 700;
-    src:  local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Bold.ttf');
+    src:  local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Bold.ttf');
 }
 
 @font-face {
@@ -38,14 +38,14 @@ ol, ul {list-style-position: inside;}
     font-display: swap;
     font-style: normal;
     font-weight: 400;
-    src:  local('PT Serif'), local('PTSerif-Regular'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Regular.ttf');
+    src:  local('PT Serif'), local('PTSerif-Regular'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Regular.ttf');
 }
 @font-face {
     font-family: 'PT Serif';
     font-display: swap;
     font-style: normal;
     font-weight: 700;
-    src:  local('PT Serif Bold'), local('PTSerif-Bold'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Bold.ttf');
+    src:  local('PT Serif Bold'), local('PTSerif-Bold'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Bold.ttf');
 }
 
 /* Template Styles */
@@ -167,7 +167,7 @@ pre{ white-space: pre-wrap; }
     transform-origin: right center;*/
 }
 /* Sidebar */
-#sidebar[aria-hidden="false"]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
+#sidebar[open]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
 @keyframes opening{ 0% { transform: translate3d(0, 0, 0) scale(1); } 100% { transform: translate3d(60%, 0, 0) scale(0.8); } }
 @keyframes closing{ 0% { transform: translate3d(60%, 0, 0) scale(0.8); } 100% { transform: translate3d(0, 0, 0) scale(1); } }
 @keyframes closingFix{ 0% { max-height: 100vh; overflow: hidden; } 100% { max-height: none; overflow: visible; } }
@@ -198,9 +198,9 @@ pre{ white-space: pre-wrap; }
 .toast span{ opacity: 1; top: 24px; -webkit-transition: all ease-in-out .4s; transition: all ease-in-out .4s; }
 .toast:before{ top: 17px; }
 .toast:after{ top: 31px; }
-#sidebar[aria-hidden="false"]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
-#sidebar[aria-hidden="false"]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
-#sidebar[aria-hidden="false"]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
+#sidebar[open]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
+#sidebar[open]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
+#sidebar[open]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
 
 /* CSS3 icon */
 [class*=icono-]{ display: inline-block; vertical-align: middle; position: relative; font-style: normal; color: #f42; text-align: left; text-indent: -9999px; direction: ltr }
@@ -240,11 +240,11 @@ amp-user-notification button { background-color:  #F42F42;}
 @font-face {
   font-family: 'icomoon';
   font-display: swap;
-  src:  url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot');
-  src:  url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot') format('embedded-opentype'),
-    url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.ttf') format('truetype'),
-    url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.woff') format('woff'),
-    url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.svg') format('svg');
+  src:  url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot');
+  src:  url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot') format('embedded-opentype'),
+    url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.ttf') format('truetype'),
+    url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.woff') format('woff'),
+    url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -387,7 +387,7 @@ amp-user-notification button { background-color:  #F42F42;}
         </div>
                 <div class="headerlogo">
                   <div class="amp-logo">
-            <h1>          <a href="http://blog.mfrna.com/amp/">mfrna</a></h1>    </div>
+            <h1>          <a href="https://blog.mfrna.com/amp/">mfrna</a></h1>    </div>
          </div>
                 
       </div>
@@ -397,18 +397,18 @@ amp-user-notification button { background-color:  #F42F42;}
     
 		<div class="amp-wp-content amp-loop-list ">
 								<div class="home-post_image">
-						<a href="http://blog.mfrna.com/silex-cors-solution-for-options-requests/amp/">
-							<amp-img layout="responsive" src="http://blog.mfrna.com/wp-content/uploads/2017/12/silex-300x300.png" width="300" height="300"></amp-img></a>
+						<a href="https://blog.mfrna.com/silex-cors-solution-for-options-requests/amp/">
+							<amp-img layout="responsive" src="https://blog.mfrna.com/wp-content/uploads/2017/12/silex-300x300.png" width="300" height="300"></amp-img></a>
 				</div>
 				
 			<div class="amp-wp-post-content">
-                <ul class="amp-wp-tags"><li class="amp-cat-8"><a href="http://blog.mfrna.com/category/api/amp/">API</a></li>
-											<li class="amp-cat-6"><a href="http://blog.mfrna.com/category/mvc/amp/">MVC</a></li>
-											<li class="amp-cat-5"><a href="http://blog.mfrna.com/category/php/amp/">PHP</a></li>
-											<li class="amp-cat-7"><a href="http://blog.mfrna.com/category/php/silex/amp/">Silex</a></li>
-											<li class="amp-cat-4"><a href="http://blog.mfrna.com/category/technical-gotchas/amp/">Technical Gotchas</a></li>
+                <ul class="amp-wp-tags"><li class="amp-cat-8"><a href="https://blog.mfrna.com/category/api/amp/">API</a></li>
+											<li class="amp-cat-6"><a href="https://blog.mfrna.com/category/mvc/amp/">MVC</a></li>
+											<li class="amp-cat-5"><a href="https://blog.mfrna.com/category/php/amp/">PHP</a></li>
+											<li class="amp-cat-7"><a href="https://blog.mfrna.com/category/php/silex/amp/">Silex</a></li>
+											<li class="amp-cat-4"><a href="https://blog.mfrna.com/category/technical-gotchas/amp/">Technical Gotchas</a></li>
 					 
-                </ul><h3 class="amp-wp-title"><a href="http://blog.mfrna.com/silex-cors-solution-for-options-requests/amp/">Silex CORS solution for OPTIONS requests</a></h3>
+                </ul><h3 class="amp-wp-title"><a href="https://blog.mfrna.com/silex-cors-solution-for-options-requests/amp/">Silex CORS solution for OPTIONS requests</a></h3>
 										<p class="large-screen-excerpt-design-3">Recently, I have worked on a cross platform app that needed a php back end. I elected to build the…</p>                <div class="featured_time">2 years ago                </div>
 		    </div>
             <div class="cb"></div>
@@ -469,12 +469,12 @@ amp-user-notification button { background-color:  #F42F42;}
 		        }]
 		      }]
 		    }
-		  </script></amp-animation></p>            <p class="rightslink">All Rights Reserved | <a class="view-non-amp" href="http://blog.mfrna.com/category/php/silex/" title="View Non-AMP Version">View Non-AMP Version</a>           
+		  </script></amp-animation></p>            <p class="rightslink">All Rights Reserved | <a class="view-non-amp" href="https://blog.mfrna.com/category/php/silex/" title="View Non-AMP Version">View Non-AMP Version</a>           
             </p>
              <p class="poweredby">
                 <a title="AMP for WP" href="https://ampforwp.com" rel="nofollow">Powered by AMPforWP</a>
             </p>      </div>
   </footer></div>
 	
-	<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"CollectionPage","mainEntityOfPage":"http:\/\/blog.mfrna.com\/header\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"Silex","author":{"@type":"Person","name":"mfrna"},"datePublished":"2017-03-30T01:25:18+00:00","dateModified":"2017-03-30T01:25:18+00:00","image":{"@type":"ImageObject","url":null,"height":720,"width":1280},"description":""}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
+	<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"CollectionPage","mainEntityOfPage":"https:\/\/blog.mfrna.com\/header\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"Silex","author":{"@type":"Person","name":"mfrna"},"datePublished":"2017-03-30T01:25:18+00:00","dateModified":"2017-03-30T01:25:18+00:00","image":{"@type":"ImageObject","url":null,"height":720,"width":1280},"description":""}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
 					{"vars":{"account":"UA-98475264-1","anonymizeIP":"true"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}				</script></amp-analytics></main></div></body></html>
