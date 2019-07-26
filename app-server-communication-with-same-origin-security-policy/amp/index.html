@@ -247,7 +247,7 @@ pre{ white-space: pre-wrap; }
     transform-origin: right center;*/
 }
 /* Sidebar */
-#sidebar[open]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
+#sidebar[aria-hidden="false"]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
 @keyframes opening{ 0% { transform: translate3d(0, 0, 0) scale(1); } 100% { transform: translate3d(60%, 0, 0) scale(0.8); } }
 @keyframes closing{ 0% { transform: translate3d(60%, 0, 0) scale(0.8); } 100% { transform: translate3d(0, 0, 0) scale(1); } }
 @keyframes closingFix{ 0% { max-height: 100vh; overflow: hidden; } 100% { max-height: none; overflow: visible; } }
@@ -278,9 +278,9 @@ pre{ white-space: pre-wrap; }
 .toast span{ opacity: 1; top: 24px; -webkit-transition: all ease-in-out .4s; transition: all ease-in-out .4s; }
 .toast:before{ top: 17px; }
 .toast:after{ top: 31px; }
-#sidebar[open]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
-#sidebar[open]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
-#sidebar[open]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
+#sidebar[aria-hidden="false"]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
+#sidebar[aria-hidden="false"]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
+#sidebar[aria-hidden="false"]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
 
 /* CSS3 icon */
 [class*=icono-]{ display: inline-block; vertical-align: middle; position: relative; font-style: normal; color: #f42; text-align: left; text-indent: -9999px; direction: ltr }
@@ -547,9 +547,9 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 	
 	<div class="amp-wp-content the_content">
 		<div class="sharethis-inline-share-buttons amp-wp-inline-53a0243f03979e11ce67197f1514e600"></div><p>Few days ago, I had a problem with a mobile app that I’m working on. The app includes a credit card payment which required what’s called 3d secure authentication, that’s a code that gets sent to your mobile to confirm it’s really you who’s trying to make a payment using your credit card.</p>
-<p>Problem is, the 3d secure page is located on a secure server that belongs to the card issuer, that – once completed – redirects back to a callback page on our server and we had to display it in an iframe inside the app then detect once the operation has completed to confirm if the user has paid or not, however, You can’t access an <code><iframe></code> with Javascript. For the <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" rel="noreferrer">same-origin policy</a> browsers block scripts trying to access a frame with a different origin. Bear in mind that the app code is running in the <code>file://</code> protocol, while the callback page is loaded from our <code>https</code> web server.</p>
+<p>Problem is, the 3d secure page is located on a secure server that belongs to the card issuer, that – once completed – redirects back to a callback page on our server and we had to display it in an iframe inside the app then detect once the operation has completed to confirm if the user has paid or not, however, You can’t access an <code>&lt;iframe&gt;</code> with Javascript. For the <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" rel="noreferrer">same-origin policy</a> browsers block scripts trying to access a frame with a different origin. Bear in mind that the app code is running in the <code>file://</code> protocol, while the callback page is loaded from our <code>https</code> web server.</p>
 <p>Origin is considered different if at least one of the following parts of the address isn’t maintained:</p>
-<pre class="lang-none prettyprint prettyprinted"><code><span class="pln"><protocol>://<hostname>:<port>/path/to/page.html </span></code></pre>
+<pre class="lang-none prettyprint prettyprinted"><code><span class="pln">&lt;protocol&gt;://&lt;hostname&gt;:&lt;port&gt;/path/to/page.html </span></code></pre>
 <p>“Protocol”, “hostname” and “port” must be the same of your domain, if you want to access a frame content.</p>
 <h2>Solution</h2>
 <p>Since I had access to both the page and app, I worked around this problem using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage" rel="noreferrer"><code>window.postMessage</code></a> and its relative <code>message</code> event to send messages between the page and app, like this:</p>
@@ -582,7 +582,7 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 </div> 
 	<div class="amp-wp-content amp_author_area ampforwp-meta-taxonomy">
 	    <div class="amp_author_area_wrapper">
-	        	                    <amp-img src="https://secure.gravatar.com/avatar/9aef19b4e302bfb911f36913c43282ed?s=70&d=mm&r=g" width="70" height="70" layout="fixed"></amp-img><strong> mfrna</strong>:  	    </div>
+	        	                    <amp-img src="http://0.gravatar.com/avatar/9aef19b4e302bfb911f36913c43282ed?s=70&d=mm&r=g" width="70" height="70" layout="fixed"></amp-img><strong> mfrna</strong>:  	    </div>
 	</div> <div class="amp-wp-content ampforwp-social-icons-wrapper ampforwp-social-icons">
     <i class="icono-share"></i>
     										<div class="ampforwp-custom-social">
@@ -710,5 +710,5 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 			</a>
 																													
 	</div> 
-		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"https:\/\/blog.mfrna.com\/app-server-communication-with-same-origin-security-policy\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"App\/Server communication with Same-origin security policy","author":{"@type":"Person","name":"mfrna","image":"https:\/\/secure.gravatar.com\/avatar\/9aef19b4e302bfb911f36913c43282ed?s=50&d=mm&r=g"},"datePublished":"2018-01-01T18:06:58+00:00","dateModified":"2018-01-02T17:40:32+00:00","image":{"@type":"ImageObject","url":"https:\/\/blog.mfrna.com\/wp-content\/uploads\/2018\/01\/learn-javascript-1280x720.png","width":1280,"height":720},"description":"Few days ago, I had a problem with a mobile app that I'm working on.…"}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"https:\/\/blog.mfrna.com\/app-server-communication-with-same-origin-security-policy\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"App\/Server communication with Same-origin security policy","author":{"@type":"Person","name":"mfrna","image":"http:\/\/0.gravatar.com\/avatar\/9aef19b4e302bfb911f36913c43282ed?s=50&d=mm&r=g"},"datePublished":"2018-01-01T18:06:58+00:00","dateModified":"2018-01-02T17:40:32+00:00","image":{"@type":"ImageObject","url":"https:\/\/blog.mfrna.com\/wp-content\/uploads\/2018\/01\/learn-javascript-1280x720.png","width":1280,"height":720},"description":"Few days ago, I had a problem with a mobile app that I'm working on.…"}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
 					{"vars":{"account":"UA-98475264-1","anonymizeIP":"true"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}				</script></amp-analytics></body></html>
