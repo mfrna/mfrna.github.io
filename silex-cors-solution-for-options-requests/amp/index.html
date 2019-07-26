@@ -23,14 +23,14 @@ ol, ul {list-style-position: inside;}
     font-display: swap;
     font-style: normal;
     font-weight: 400;
-    src:  local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Regular.ttf');
+    src:  local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Regular.ttf');
 }
 @font-face {
     font-family: 'Roboto Slab';
     font-display: swap;
     font-style: normal;
     font-weight: 700;
-    src:  local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Bold.ttf');
+    src:  local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/robotoslab/RobotoSlab-Bold.ttf');
 }
 
 @font-face {
@@ -38,14 +38,14 @@ ol, ul {list-style-position: inside;}
     font-display: swap;
     font-style: normal;
     font-weight: 400;
-    src:  local('PT Serif'), local('PTSerif-Regular'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Regular.ttf');
+    src:  local('PT Serif'), local('PTSerif-Regular'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Regular.ttf');
 }
 @font-face {
     font-family: 'PT Serif';
     font-display: swap;
     font-style: normal;
     font-weight: 700;
-    src:  local('PT Serif Bold'), local('PTSerif-Bold'), url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Bold.ttf');
+    src:  local('PT Serif Bold'), local('PTSerif-Bold'), url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/ptserif/PT_Serif-Web-Bold.ttf');
 }
 
 /* Template Styles */
@@ -247,7 +247,7 @@ pre{ white-space: pre-wrap; }
     transform-origin: right center;*/
 }
 /* Sidebar */
-#sidebar[aria-hidden="false"]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
+#sidebar[open]+#designthree { max-height: 100vh; overflow: hidden; animation: opening .3s normal forwards ease-in-out; -webkit-transform: translate3d(60%, 0, 0) scale(0.8); transform: translate3d(60%, 0, 0) scale(0.8); }
 @keyframes opening{ 0% { transform: translate3d(0, 0, 0) scale(1); } 100% { transform: translate3d(60%, 0, 0) scale(0.8); } }
 @keyframes closing{ 0% { transform: translate3d(60%, 0, 0) scale(0.8); } 100% { transform: translate3d(0, 0, 0) scale(1); } }
 @keyframes closingFix{ 0% { max-height: 100vh; overflow: hidden; } 100% { max-height: none; overflow: visible; } }
@@ -278,9 +278,9 @@ pre{ white-space: pre-wrap; }
 .toast span{ opacity: 1; top: 24px; -webkit-transition: all ease-in-out .4s; transition: all ease-in-out .4s; }
 .toast:before{ top: 17px; }
 .toast:after{ top: 31px; }
-#sidebar[aria-hidden="false"]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
-#sidebar[aria-hidden="false"]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
-#sidebar[aria-hidden="false"]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
+#sidebar[open]+#designthree .toast span{ opacity: 0; -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); }
+#sidebar[open]+#designthree .toast:before{ -webkit-transform-origin: left bottom; transform-origin: left bottom; -webkit-transform: rotate(43deg); transform: rotate(43deg); }
+#sidebar[open]+#designthree .toast:after{ -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate(-43deg); transform: rotate(-43deg); }
 
 /* CSS3 icon */
 [class*=icono-]{ display: inline-block; vertical-align: middle; position: relative; font-style: normal; color: #f42; text-align: left; text-indent: -9999px; direction: ltr }
@@ -347,11 +347,11 @@ amp-user-notification button { background-color:  #F42F42;}
 @font-face {
   font-family: 'icomoon';
   font-display: swap;
-  src:  url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot');
-  src:  url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot') format('embedded-opentype'),
-    url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.ttf') format('truetype'),
-    url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.woff') format('woff'),
-    url('http://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.svg') format('svg');
+  src:  url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot');
+  src:  url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.eot') format('embedded-opentype'),
+    url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.ttf') format('truetype'),
+    url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.woff') format('woff'),
+    url('https://blog.mfrna.com/wp-content/plugins/accelerated-mobile-pages/templates/design-manager/design-3/fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -515,12 +515,12 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
         </div>
                 <div class="headerlogo">
                   <div class="amp-logo">
-                      <h2>           <a href="http://blog.mfrna.com/amp/">mfrna</a></h2>    </div>
+                      <h2>           <a href="https://blog.mfrna.com/amp/">mfrna</a></h2>    </div>
          </div>
                 
       </div>
   </div>
-</header><main><article class="amp-wp-article"><div class="amp-wp-content breadcrumb"> <ul id="breadcrumbs" class="breadcrumbs"><li class="item-home"><a class="bread-link bread-home" href="http://blog.mfrna.com/amp/" title="Homepage">Homepage</a></li><li class="item-cat item-cat-4"><a class="bread-cat bread-cat-4 bread-cat-Technical Gotchas" href="http://blog.mfrna.com/category/technical-gotchas/amp/" title="Technical Gotchas">Technical Gotchas</a></li></ul></div>
+</header><main><article class="amp-wp-article"><div class="amp-wp-content breadcrumb"> <ul id="breadcrumbs" class="breadcrumbs"><li class="item-home"><a class="bread-link bread-home" href="https://blog.mfrna.com/amp/" title="Homepage">Homepage</a></li><li class="item-cat item-cat-4"><a class="bread-cat bread-cat-4 bread-cat-Technical Gotchas" href="https://blog.mfrna.com/category/technical-gotchas/amp/" title="Technical Gotchas">Technical Gotchas</a></li></ul></div>
 
 <div class="amp-wp-content amp-wp-article-header ampforwp-meta-info">
 	<div class="amp-wp-content post-title-meta">
@@ -529,11 +529,11 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 	<div class="amp-wp-meta amp-wp-byline">
   <span class="amp-wp-author author vcard">mfrna</span>  	<span class="amp-wp-meta amp-wp-tax-category ampforwp-tax-category  ">
       in <span class="amp-cat amp-cat-8">
-                 <a href="http://blog.mfrna.com/category/api/amp/"> API</a>  </span><span class="amp-cat amp-cat-6">
-                 <a href="http://blog.mfrna.com/category/mvc/amp/"> MVC</a>  </span><span class="amp-cat amp-cat-5">
-                 <a href="http://blog.mfrna.com/category/php/amp/"> PHP</a>  </span><span class="amp-cat amp-cat-7">
-                 <a href="http://blog.mfrna.com/category/php/silex/amp/"> Silex</a>  </span><span class="amp-cat amp-cat-4">
-                 <a href="http://blog.mfrna.com/category/technical-gotchas/amp/"> Technical Gotchas</a>  </span>  	</span>
+                 <a href="https://blog.mfrna.com/category/api/amp/"> API</a>  </span><span class="amp-cat amp-cat-6">
+                 <a href="https://blog.mfrna.com/category/mvc/amp/"> MVC</a>  </span><span class="amp-cat amp-cat-5">
+                 <a href="https://blog.mfrna.com/category/php/amp/"> PHP</a>  </span><span class="amp-cat amp-cat-7">
+                 <a href="https://blog.mfrna.com/category/php/silex/amp/"> Silex</a>  </span><span class="amp-cat amp-cat-4">
+                 <a href="https://blog.mfrna.com/category/technical-gotchas/amp/"> Technical Gotchas</a>  </span>  	</span>
 
 
 	</div>
@@ -544,7 +544,7 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 <header class="amp-wp-content amp-wp-article-header ampforwp-title"><h1 class="amp-wp-title">Silex CORS solution for OPTIONS requests</h1>
 	</header><div class="amp-wp-article-featured-image amp-wp-content featured-image-content">
 				<div class="post-featured-img">
-					<figure class="amp-wp-article-featured-image wp-caption"><amp-img width="400" height="400" src="http://blog.mfrna.com/wp-content/uploads/2017/12/silex.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="http://blog.mfrna.com/wp-content/uploads/2017/12/silex.png 400w, http://blog.mfrna.com/wp-content/uploads/2017/12/silex-150x150.png 150w, http://blog.mfrna.com/wp-content/uploads/2017/12/silex-300x300.png 300w, http://blog.mfrna.com/wp-content/uploads/2017/12/silex-100x100.png 100w" sizes="(min-width: 400px) 400px, 100vw"></amp-img></figure></div>
+					<figure class="amp-wp-article-featured-image wp-caption"><amp-img width="400" height="400" src="https://blog.mfrna.com/wp-content/uploads/2017/12/silex.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="https://blog.mfrna.com/wp-content/uploads/2017/12/silex.png 400w, https://blog.mfrna.com/wp-content/uploads/2017/12/silex-150x150.png 150w, https://blog.mfrna.com/wp-content/uploads/2017/12/silex-300x300.png 300w, https://blog.mfrna.com/wp-content/uploads/2017/12/silex-100x100.png 100w" sizes="(min-width: 400px) 400px, 100vw"></amp-img></figure></div>
 			</div> <div class="amp-wp-article-content">
 
 	
@@ -573,7 +573,7 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 	
 				<div class="amp-wp-content post-pagination-meta">
 				<div id="pagination">
-                                    <span>Next Read: </span> <a href="http://blog.mfrna.com/app-server-communication-with-same-origin-security-policy/amp/">App/Server communication with Same-origin security policy »</a> 				</div>
+                                    <span>Next Read: </span> <a href="https://blog.mfrna.com/app-server-communication-with-same-origin-security-policy/amp/">App/Server communication with Same-origin security policy »</a> 				</div>
 			</div>
 			
 
@@ -585,57 +585,57 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 	</div> <div class="amp-wp-content ampforwp-social-icons-wrapper ampforwp-social-icons">
     <i class="icono-share"></i>
     										<div class="ampforwp-custom-social">
-				<a title="twitter share" href="https://twitter.com/intent/tweet?url=http://blog.mfrna.com/silex-cors-solution-for-options-requests/&text=Silex%20CORS%20solution%20for%20OPTIONS%20requests&via=" class="amp-social-icon-rounded amp-social-twitter">
+				<a title="twitter share" href="https://twitter.com/intent/tweet?url=https://blog.mfrna.com/silex-cors-solution-for-options-requests/&text=Silex%20CORS%20solution%20for%20OPTIONS%20requests&via=" class="amp-social-icon-rounded amp-social-twitter">
 				    <amp-img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjQwLjAxNzEgNjAxLjA4NjkiIGZpbGw9IiNmZmZmZmYiID48cGF0aCBkPSJNMCA1MzAuMTU1YzEwLjQyIDEuMDE1IDIwLjgyNiAxLjU0OCAzMS4yMiAxLjU0OCA2MS4wNSAwIDExNS41MjgtMTguNzMgMTYzLjM4Ny01Ni4xNy0yOC40MjQtLjM1Mi01My45MzMtOS4wNC03Ni40NzctMjYuMDQzLTIyLjU3LTE2Ljk5LTM3Ljk4NC0zOC42NzUtNDYuMzIzLTY1LjA1NiA2LjkzMyAxLjQxOCAxNS4xMDIgMi4wOTUgMjQuNDU2IDIuMDk1IDEyLjE1IDAgMjMuNzY3LTEuNTc1IDM0Ljg2Mi00LjY4NC0zMC41MTctNS44NjctNTUuNzY2LTIwLjg5Mi03NS43MS00NC45OTctMTkuOTU0LTI0LjEzMi0yOS45Mi01MS45Ny0yOS45Mi04My41Mjh2LTEuNTc0YzE4LjM5NiAxMC40MiAzOC4zMTIgMTUuODA2IDU5LjgyOCAxNi4xMy0xOC4wMTctMTEuNzk4LTMyLjM0LTI3LjMwNC00Mi45MTUtNDYuNTctMTAuNTc2LTE5LjI0LTE1Ljg3LTQwLjEzLTE1Ljg3LTYyLjY3NCAwLTIzLjU5OCA2LjA4Ny00NS42MDggMTguMjEtNjYuMDk2IDMyLjYgNDAuNTg2IDcyLjQyIDcyLjkzOCAxMTkuNDMyIDk3LjA1NiA0NyAyNC4wOSA5Ny4zNyAzNy41MyAxNTEuMTU4IDQwLjMyNi0yLjQzMi0xMS40NDctMy42NTUtMjEuNTE2LTMuNjU1LTMwLjE4IDAtMzYuMDg1IDEyLjg0LTY2Ljk1NCAzOC41MDUtOTIuNjIgMjUuNjgtMjUuNjY2IDU2LjcwNC0zOC41MDUgOTMuMTUzLTM4LjUwNSAzNy43OSAwIDY5LjcwMiAxMy44OCA5NS43MyA0MS42NCAzMC4xNjgtNi4yNTcgNTcuOTI4LTE3LjAxNSA4My4yNTYtMzIuMjYtOS43MTggMzEuNTU4LTI4LjgxNSA1NS44NDUtNTcuMjM4IDcyLjg0NyAyNS4zMjgtMy4xMSA1MC4zMDQtMTAuMDU2IDc0LjkzLTIwLjgxNC0xNi42NTIgMjYuMDE3LTM4LjMzNyA0OC43NDItNjUuMDU3IDY4LjE1MnYxNy4xOTdjMCAzNC45OTItNS4xMjQgNzAuMTI4LTE1LjM0OCAxMDUuMzU1LTEwLjIxMiAzNS4yMTQtMjUuODUgNjguODUzLTQ2LjgzIDEwMC45NzItMjAuOTk2IDMyLjA2NS00Ni4wNSA2MC42Mi03NS4xOSA4NS41Ny0yOS4xMjYgMjQuOTc2LTY0LjA4IDQ0Ljg1My0xMDQuODUgNTkuNTktNDAuNzU0IDE0Ljc1My04NC41NTMgMjIuMDktMTMxLjM5NyAyMi4wOUMxMjguODYyIDU4OC45NCA2MS43NCA1NjkuMzUgMCA1MzAuMTU0eiI+PC9wYXRoPjwvc3ZnPg==" width="16" height="16"></amp-img></a>
 		    </div>
 							<div class="ampforwp-custom-social">
-				<a title="google plus share" href="https://plus.google.com/share?url=http://blog.mfrna.com/silex-cors-solution-for-options-requests/" class="amp-social-icon-rounded amp-social-gplus">
+				<a title="google plus share" href="https://plus.google.com/share?url=https://blog.mfrna.com/silex-cors-solution-for-options-requests/" class="amp-social-icon-rounded amp-social-gplus">
 				    <amp-img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjQgNjQiIGZpbGw9IiNmZmZmZmYiID48cGF0aCBkPSJNMzQuOTQyIDRIMTguMTk2QzEwLjY4OCA0IDMuNjIzIDkuNjg4IDMuNjIzIDE2LjI3NmMwIDYuNzMzIDUuMTE4IDEyLjE2NyAxMi43NTUgMTIuMTY3LjUzIDAgMS4wNDctLjAxIDEuNTUzLS4wNDctLjQ5NS45NS0uODUgMi4wMTgtLjg1IDMuMTI4IDAgMS44NyAxLjAwNyAzLjM4OCAyLjI4IDQuNjI3LS45NjIgMC0xLjg5LjAzLTIuOTAzLjAzQzcuMTU3IDM2LjE4IDAgNDIuMSAwIDQ4LjI0MmMwIDYuMDUgNy44NDcgOS44MzIgMTcuMTQ3IDkuODMyIDEwLjYwMiAwIDE2LjQ1Ny02LjAxNSAxNi40NTctMTIuMDY0IDAtNC44NS0xLjQzLTcuNzU0LTUuODU1LTEwLjg4Mi0xLjUxNS0xLjA3Mi00LjQxLTMuNjc3LTQuNDEtNS4yMSAwLTEuNzk0LjUxMy0yLjY3OCAzLjIxNS00Ljc5IDIuNzctMi4xNjMgNC43My01LjIwNSA0LjczLTguNzQ0IDAtNC4yMTMtMS44NzYtOC4zMi01LjM5OC05LjY3M2g1LjMxbDMuNzQ4LTIuNzA4em0tNS44NSA0MC45NjZjLjEzNC41Ni4yMDYgMS4xMzguMjA2IDEuNzI3IDAgNC44ODgtMy4xNSA4LjcwNy0xMi4xODYgOC43MDctNi40MjggMC0xMS4wNy00LjA3LTExLjA3LTguOTU2IDAtNC43OSA1Ljc1OC04Ljc3OCAxMi4xODUtOC43MDggMS41LjAxNiAyLjg5OC4yNTcgNC4xNjcuNjY4IDMuNDkgMi40MjcgNS45OTIgMy43OTggNi42OTggNi41NjN6bS0xMC4yOS0xOC4yM2MtNC4zMTYtLjEzLTguNDE2LTQuODI3LTkuMTYtMTAuNDktLjc0NS01LjY2OCAyLjE0OC0xMC4wMDQgNi40NjItOS44NzUgNC4zMTMuMTMgOC40MTUgNC42NzcgOS4xNiAxMC4zNDJzLTIuMTUgMTAuMTU0LTYuNDYyIDEwLjAyNHpNNTIgMTZWNGgtNHYxMkgzNnY0aDEydjEyaDRWMjBoMTJ2LTR6Ij48L3BhdGg+PC9zdmc+" width="16" height="16"></amp-img></a>
 		    </div>
 							<div class="ampforwp-custom-social">
-				<a title="mailto" href="mailto:?subject=Silex%20CORS%20solution%20for%20OPTIONS%20requests&body=http://blog.mfrna.com/silex-cors-solution-for-options-requests/" class="amp-social-icon-rounded amp-social-email">
+				<a title="mailto" href="mailto:?subject=Silex%20CORS%20solution%20for%20OPTIONS%20requests&body=https://blog.mfrna.com/silex-cors-solution-for-options-requests/" class="amp-social-icon-rounded amp-social-email">
 				    <amp-img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgODk2IDEwMjYiIGZpbGw9IiNmZmZmZmYiID48cGF0aCBkPSJNMCAxOTN2NjQwaDg5NlYxOTNIMHptNzY4IDY0TDQ0OCA1MjEgMTI4IDI1N2g2NDB6TTY0IDMyMWwyNTIuMDMgMTkxLjYyNUw2NCA3MDVWMzIxem02NCA0NDhsMjU0LTIwNi4yNUw0NDggNjEzbDY1Ljg3NS01MC4xMjVMNzY4IDc2OUgxMjh6bTcwNC02NEw1NzkuNjI1IDUxMi45MzggODMyIDMyMXYzODR6Ij48L3BhdGg+PC9zdmc+" width="16" height="16"></amp-img></a>
 		    </div>
 							<div class="ampforwp-custom-social">
-				<a title="pinterest share" href="https://pinterest.com/pin/create/bookmarklet/?media=http://blog.mfrna.com/wp-content/uploads/2017/12/silex.png&url=http://blog.mfrna.com/silex-cors-solution-for-options-requests/&description=Silex%20CORS%20solution%20for%20OPTIONS%20requests" target="_blank" class="amp-social-icon-rounded amp-social-pinterest">
+				<a title="pinterest share" href="https://pinterest.com/pin/create/bookmarklet/?media=https://blog.mfrna.com/wp-content/uploads/2017/12/silex.png&url=https://blog.mfrna.com/silex-cors-solution-for-options-requests/&description=Silex%20CORS%20solution%20for%20OPTIONS%20requests" target="_blank" class="amp-social-icon-rounded amp-social-pinterest">
 				    <amp-img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGZpbGw9IiNmZmZmZmYiID48cGF0aCBkPSJNOC42MTcgMTMuMjI3QzguMDkgMTUuOTggNy40NSAxOC42MiA1LjU1IDIwYy0uNTg3LTQuMTYyLjg2LTcuMjg3IDEuNTMzLTEwLjYwNS0xLjE0Ny0xLjkzLjEzOC01LjgxMiAyLjU1NS00Ljg1NSAyLjk3NSAxLjE3Ni0yLjU3NiA3LjE3MiAxLjE1IDcuOTIyIDMuODkuNzggNS40OC02Ljc1IDMuMDY2LTkuMkMxMC4zNy0uMjc0IDMuNzA4IDMuMTggNC41MjggOC4yNDZjLjIgMS4yMzggMS40NzggMS42MTMuNTEgMy4zMjItMi4yMy0uNDk0LTIuODk2LTIuMjU0LTIuODEtNC42LjEzOC0zLjg0IDMuNDUtNi41MjcgNi43Ny02LjkgNC4yMDItLjQ3IDguMTQ1IDEuNTQzIDguNjkgNS40OTQuNjEzIDQuNDYyLTEuODk2IDkuMjk0LTYuMzkgOC45NDYtMS4yMTctLjA5NS0xLjcyNy0uNy0yLjY4LTEuMjh6Ij48L3BhdGg+PC9zdmc+" width="16" height="16"></amp-img></a>
 		    </div>
 							<div class="ampforwp-custom-social">
-				<a title="linkedin share" href="https://www.linkedin.com/shareArticle?url=http://blog.mfrna.com/silex-cors-solution-for-options-requests/&title=Silex%20CORS%20solution%20for%20OPTIONS%20requests" class="amp-social-icon-rounded amp-social-linkedin" target="_blank">
+				<a title="linkedin share" href="https://www.linkedin.com/shareArticle?url=https://blog.mfrna.com/silex-cors-solution-for-options-requests/&title=Silex%20CORS%20solution%20for%20OPTIONS%20requests" class="amp-social-icon-rounded amp-social-linkedin" target="_blank">
 				    <amp-img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTA0NiAxMDA3IiBmaWxsPSIjZmZmZmZmIiA+PHBhdGggZD0iTTIzNyAxMDA1VjMzMEgxM3Y2NzVoMjI0ek0xMjUgMjM4Yzc4IDAgMTI3LTUyIDEyNy0xMTdDMjUxIDU1IDIwMyA0IDEyNyA0IDUwIDQgMCA1NCAwIDEyMWMwIDY1IDQ5IDExNyAxMjQgMTE3aDF6bTIzNiA3NjdoMjI0VjYyOGMwLTIwIDEtNDAgNy01NSAxNi00MCA1My04MiAxMTUtODIgODEgMCAxMTQgNjIgMTE0IDE1M3YzNjFoMjI0VjYxOGMwLTIwNy0xMTEtMzA0LTI1OC0zMDQtMTIxIDAtMTc0IDY4LTIwNCAxMTRoMXYtOThIMzYwYzMgNjMgMCA2NzUgMCA2NzV6Ij48L3BhdGg+PC9zdmc+" width="16" height="16"></amp-img></a>
 		    </div>
 							<div class="ampforwp-custom-social">
-				<a title="whatsapp share" href="https://api.whatsapp.com/send?text=http://blog.mfrna.com/silex-cors-solution-for-options-requests/" class="amp-social-icon-rounded amp-social-whatsapp">
+				<a title="whatsapp share" href="https://api.whatsapp.com/send?text=https://blog.mfrna.com/silex-cors-solution-for-options-requests/" class="amp-social-icon-rounded amp-social-whatsapp">
 				    <amp-img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgOTAgOTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDkwIDkwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggaWQ9IldoYXRzQXBwIiBkPSJNOTAsNDMuODQxYzAsMjQuMjEzLTE5Ljc3OSw0My44NDEtNDQuMTgyLDQzLjg0MWMtNy43NDcsMC0xNS4wMjUtMS45OC0yMS4zNTctNS40NTVMMCw5MGw3Ljk3NS0yMy41MjIgICBjLTQuMDIzLTYuNjA2LTYuMzQtMTQuMzU0LTYuMzQtMjIuNjM3QzEuNjM1LDE5LjYyOCwyMS40MTYsMCw0NS44MTgsMEM3MC4yMjMsMCw5MCwxOS42MjgsOTAsNDMuODQxeiBNNDUuODE4LDYuOTgyICAgYy0yMC40ODQsMC0zNy4xNDYsMTYuNTM1LTM3LjE0NiwzNi44NTljMCw4LjA2NSwyLjYyOSwxNS41MzQsNy4wNzYsMjEuNjFMMTEuMTA3LDc5LjE0bDE0LjI3NS00LjUzNyAgIGM1Ljg2NSwzLjg1MSwxMi44OTEsNi4wOTcsMjAuNDM3LDYuMDk3YzIwLjQ4MSwwLDM3LjE0Ni0xNi41MzMsMzcuMTQ2LTM2Ljg1N1M2Ni4zMDEsNi45ODIsNDUuODE4LDYuOTgyeiBNNjguMTI5LDUzLjkzOCAgIGMtMC4yNzMtMC40NDctMC45OTQtMC43MTctMi4wNzYtMS4yNTRjLTEuMDg0LTAuNTM3LTYuNDEtMy4xMzgtNy40LTMuNDk1Yy0wLjk5My0wLjM1OC0xLjcxNy0wLjUzOC0yLjQzOCwwLjUzNyAgIGMtMC43MjEsMS4wNzYtMi43OTcsMy40OTUtMy40Myw0LjIxMmMtMC42MzIsMC43MTktMS4yNjMsMC44MDktMi4zNDcsMC4yNzFjLTEuMDgyLTAuNTM3LTQuNTcxLTEuNjczLTguNzA4LTUuMzMzICAgYy0zLjIxOS0yLjg0OC01LjM5My02LjM2NC02LjAyNS03LjQ0MWMtMC42MzEtMS4wNzUtMC4wNjYtMS42NTYsMC40NzUtMi4xOTFjMC40ODgtMC40ODIsMS4wODQtMS4yNTUsMS42MjUtMS44ODIgICBjMC41NDMtMC42MjgsMC43MjMtMS4wNzUsMS4wODItMS43OTNjMC4zNjMtMC43MTcsMC4xODItMS4zNDQtMC4wOS0xLjg4M2MtMC4yNy0wLjUzNy0yLjQzOC01LjgyNS0zLjM0LTcuOTc3ICAgYy0wLjkwMi0yLjE1LTEuODAzLTEuNzkyLTIuNDM2LTEuNzkyYy0wLjYzMSwwLTEuMzU0LTAuMDktMi4wNzYtMC4wOWMtMC43MjIsMC0xLjg5NiwwLjI2OS0yLjg4OSwxLjM0NCAgIGMtMC45OTIsMS4wNzYtMy43ODksMy42NzYtMy43ODksOC45NjNjMCw1LjI4OCwzLjg3OSwxMC4zOTcsNC40MjIsMTEuMTEzYzAuNTQxLDAuNzE2LDcuNDksMTEuOTIsMTguNSwxNi4yMjMgICBDNTguMiw2NS43NzEsNTguMiw2NC4zMzYsNjAuMTg2LDY0LjE1NmMxLjk4NC0wLjE3OSw2LjQwNi0yLjU5OSw3LjMxMi01LjEwN0M2OC4zOTgsNTYuNTM3LDY4LjM5OCw1NC4zODYsNjguMTI5LDUzLjkzOHoiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" width="16" height="16"></amp-img></a>
 		    </div>
 							<div class="ampforwp-custom-social">
-				<a title="line share" class="amp-social-line amp-social-icon-rounded" href="http://line.me/R/msg/text/?http://blog.mfrna.com/silex-cors-solution-for-options-requests/">
+				<a title="line share" class="amp-social-line amp-social-icon-rounded" href="http://line.me/R/msg/text/?https://blog.mfrna.com/silex-cors-solution-for-options-requests/">
 					<amp-img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI5Ni41MjggMjk2LjUyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjk2LjUyOCAyOTYuNTI4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPHBhdGggZD0iTTI5NS44MzgsMTE1LjM0N2wwLjAwMy0wLjAwMWwtMC4wOTItMC43NmMtMC4wMDEtMC4wMTMtMC4wMDItMC4wMjMtMC4wMDQtMC4wMzZjLTAuMDAxLTAuMDExLTAuMDAyLTAuMDIxLTAuMDA0LTAuMDMyICAgbC0wLjM0NC0yLjg1OGMtMC4wNjktMC41NzQtMC4xNDgtMS4yMjgtMC4yMzgtMS45NzRsLTAuMDcyLTAuNTk0bC0wLjE0NywwLjAxOGMtMy42MTctMjAuNTcxLTEzLjU1My00MC4wOTMtMjguOTQyLTU2Ljc2MiAgIGMtMTUuMzE3LTE2LjU4OS0zNS4yMTctMjkuNjg3LTU3LjU0OC0zNy44NzhjLTE5LjEzMy03LjAxOC0zOS40MzQtMTAuNTc3LTYwLjMzNy0xMC41NzdjLTI4LjIyLDAtNTUuNjI3LDYuNjM3LTc5LjI1NywxOS4xOTMgICBDMjMuMjg5LDQ3LjI5Ny0zLjU4NSw5MS43OTksMC4zODcsMTM2LjQ2MWMyLjA1NiwyMy4xMTEsMTEuMTEsNDUuMTEsMjYuMTg0LDYzLjYyMWMxNC4xODgsMTcuNDIzLDMzLjM4MSwzMS40ODMsNTUuNTAzLDQwLjY2ICAgYzEzLjYwMiw1LjY0MiwyNy4wNTEsOC4zMDEsNDEuMjkxLDExLjExNmwxLjY2NywwLjMzYzMuOTIxLDAuNzc2LDQuOTc1LDEuODQyLDUuMjQ3LDIuMjY0YzAuNTAzLDAuNzg0LDAuMjQsMi4zMjksMC4wMzgsMy4xOCAgIGMtMC4xODYsMC43ODUtMC4zNzgsMS41NjgtMC41NywyLjM1MmMtMS41MjksNi4yMzUtMy4xMSwxMi42ODMtMS44NjgsMTkuNzkyYzEuNDI4LDguMTcyLDYuNTMxLDEyLjg1OSwxNC4wMDEsMTIuODYgICBjMC4wMDEsMCwwLjAwMSwwLDAuMDAyLDBjOC4wMzUsMCwxNy4xOC01LjM5LDIzLjIzMS04Ljk1NmwwLjgwOC0wLjQ3NWMxNC40MzYtOC40NzgsMjguMDM2LTE4LjA0MSwzOC4yNzEtMjUuNDI1ICAgYzIyLjM5Ny0xNi4xNTksNDcuNzgzLTM0LjQ3NSw2Ni44MTUtNTguMTdDMjkwLjE3MiwxNzUuNzQ1LDI5OS4yLDE0NS4wNzgsMjk1LjgzOCwxMTUuMzQ3eiBNOTIuMzQzLDE2MC41NjFINjYuNzYxICAgYy0zLjg2NiwwLTctMy4xMzQtNy03Vjk5Ljg2NWMwLTMuODY2LDMuMTM0LTcsNy03YzMuODY2LDAsNywzLjEzNCw3LDd2NDYuNjk2aDE4LjU4MWMzLjg2NiwwLDcsMy4xMzQsNyw3ICAgQzk5LjM0MywxNTcuNDI3LDk2LjIwOSwxNjAuNTYxLDkyLjM0MywxNjAuNTYxeiBNMTE5LjAzLDE1My4zNzFjMCwzLjg2Ni0zLjEzNCw3LTcsN2MtMy44NjYsMC03LTMuMTM0LTctN1Y5OS42NzUgICBjMC0zLjg2NiwzLjEzNC03LDctN2MzLjg2NiwwLDcsMy4xMzQsNyw3VjE1My4zNzF6IE0xODIuMzA0LDE1My4zNzFjMCwzLjAzMy0xLjk1Myw1LjcyMS00LjgzOCw2LjY1OCAgIGMtMC43MTIsMC4yMzEtMS40NDEsMC4zNDMtMi4xNjEsMC4zNDNjLTIuMTk5LDAtNC4zMjMtMS4wMzktNS42NjYtMi44ODhsLTI1LjIwNy0zNC43MTd2MzAuNjA1YzAsMy44NjYtMy4xMzQsNy03LDcgICBjLTMuODY2LDAtNy0zLjEzNC03LTd2LTUyLjE2YzAtMy4wMzMsMS45NTMtNS43MjEsNC44MzgtNi42NThjMi44ODYtMC45MzYsNi4wNDUsMC4wOSw3LjgyNywyLjU0NWwyNS4yMDcsMzQuNzE3Vjk5LjY3NSAgIGMwLTMuODY2LDMuMTM0LTcsNy03YzMuODY2LDAsNywzLjEzNCw3LDdWMTUzLjM3MXogTTIzMy4zMTEsMTU5LjI2OWgtMzQuNjQ1Yy0zLjg2NiwwLTctMy4xMzQtNy03di0yNi44NDdWOTguNTczICAgYzAtMy44NjYsMy4xMzQtNyw3LTdoMzMuNTdjMy44NjYsMCw3LDMuMTM0LDcsN3MtMy4xMzQsNy03LDdoLTI2LjU3djEyLjg0OWgyMS41NjJjMy44NjYsMCw3LDMuMTM0LDcsN2MwLDMuODY2LTMuMTM0LDctNyw3ICAgaC0yMS41NjJ2MTIuODQ3aDI3LjY0NWMzLjg2NiwwLDcsMy4xMzQsNyw3UzIzNy4xNzcsMTU5LjI2OSwyMzMuMzExLDE1OS4yNjl6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" width="16" height="16"></amp-img></a>
 			</div>
 																														
 </div>
 <amp-addthis width="320" height="92" data-pub-id="ra-5cc8551aa4f16f5c" data-widget-id="cwgj"></amp-addthis><div id="comments" class="ampforwp-comment-wrapper"> 				<div class="comment-button-wrapper">
-									    	<a href="http://blog.mfrna.com/silex-cors-solution-for-options-requests/#commentform" rel="nofollow" title="Leave a Comment">Leave a Comment</a> 				</div> 		</div>			<div class="amp-wp-content relatedpost">
+									    	<a href="https://blog.mfrna.com/silex-cors-solution-for-options-requests/#commentform" rel="nofollow" title="Leave a Comment">Leave a Comment</a> 				</div> 		</div>			<div class="amp-wp-content relatedpost">
 			    <div class="related_posts">
 			    	<span class="related-title">Related Post</span>
 					<ol class="clearfix"><li class="has_related_thumbnail">
 								<div class="related-post_image">
-	                            <a href="http://blog.mfrna.com/app-server-communication-with-same-origin-security-policy/amp/" rel="bookmark" title="App/Server communication with Same-origin security policy">
-											            	<amp-img src="http://blog.mfrna.com/wp-content/uploads/2018/01/learn-javascript-265x300.png" width="265" height="300" layout="responsive"></amp-img></a>
+	                            <a href="https://blog.mfrna.com/app-server-communication-with-same-origin-security-policy/amp/" rel="bookmark" title="App/Server communication with Same-origin security policy">
+											            	<amp-img src="https://blog.mfrna.com/wp-content/uploads/2018/01/learn-javascript-265x300.png" width="265" height="300" layout="responsive"></amp-img></a>
 	                  	</div>
 			                <div class="related_link">
-			                    			                    <a href="http://blog.mfrna.com/app-server-communication-with-same-origin-security-policy/amp/" title="App/Server communication with Same-origin security policy">App/Server communication with Same-origin security policy</a>
+			                    			                    <a href="https://blog.mfrna.com/app-server-communication-with-same-origin-security-policy/amp/" title="App/Server communication with Same-origin security policy">App/Server communication with Same-origin security policy</a>
 			                    				                    <p class="large-screen-excerpt-design-3">Few days ago, I had a problem with a mobile app that I'm working on.…</p>
 				                    
 			                </div>
 		            		</li>
 		            							<li class="has_related_thumbnail">
 								<div class="related-post_image">
-	                            <a href="http://blog.mfrna.com/locked-out-of-mysql/amp/" rel="bookmark" title="Locked out of MySQL!">
-											            	<amp-img src="http://blog.mfrna.com/wp-content/uploads/2017/05/screenshot1-740-299-slideshow-resize-300x121.jpg" width="300" height="121" layout="responsive"></amp-img></a>
+	                            <a href="https://blog.mfrna.com/locked-out-of-mysql/amp/" rel="bookmark" title="Locked out of MySQL!">
+											            	<amp-img src="https://blog.mfrna.com/wp-content/uploads/2017/05/screenshot1-740-299-slideshow-resize-300x121.jpg" width="300" height="121" layout="responsive"></amp-img></a>
 	                  	</div>
 			                <div class="related_link">
-			                    			                    <a href="http://blog.mfrna.com/locked-out-of-mysql/amp/" title="Locked out of MySQL!">Locked out of MySQL!</a>
+			                    			                    <a href="https://blog.mfrna.com/locked-out-of-mysql/amp/" title="Locked out of MySQL!">Locked out of MySQL!</a>
 			                    				                    <p class="large-screen-excerpt-design-3">Few days ago, I had been assigned the task to migrate an application to a…</p>
 				                    
 			                </div>
@@ -690,7 +690,7 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 		        }]
 		      }]
 		    }
-		  </script></amp-animation></p>            <p class="rightslink">All Rights Reserved | <a class="view-non-amp" href="http://blog.mfrna.com/silex-cors-solution-for-options-requests/" title="View Non-AMP Version">View Non-AMP Version</a>           
+		  </script></amp-animation></p>            <p class="rightslink">All Rights Reserved | <a class="view-non-amp" href="https://blog.mfrna.com/silex-cors-solution-for-options-requests/" title="View Non-AMP Version">View Non-AMP Version</a>           
             </p>
              <p class="poweredby">
                 <a title="AMP for WP" href="https://ampforwp.com" rel="nofollow">Powered by AMPforWP</a>
@@ -699,15 +699,15 @@ div.amp-wp-inline-53a0243f03979e11ce67197f1514e600{margin-bottom:0px;margin-top:
 	
 			<div class="sticky_social">
 			 
-							  				  		          <amp-social-share type="twitter" width="50" height="28" aria-label="twitter" data-param-url="" data-param-text="TITLE http://blog.mfrna.com/silex-cors-solution-for-options-requests/ via "></amp-social-share><amp-social-share type="gplus" width="50" height="28" aria-label="gplus"></amp-social-share><amp-social-share type="email" width="50" height="28" aria-label="email"></amp-social-share><amp-social-share type="pinterest" width="50" height="28" aria-label="pinterest" data-param-media="http://blog.mfrna.com/wp-content/uploads/2017/12/silex.png"></amp-social-share><amp-social-share type="linkedin" width="50" height="28" aria-label="linkedin"></amp-social-share><a title="whatsapp share" href="https://api.whatsapp.com/send?text=http://blog.mfrna.com/silex-cors-solution-for-options-requests/">
+							  				  		          <amp-social-share type="twitter" width="50" height="28" aria-label="twitter" data-param-url="" data-param-text="TITLE https://blog.mfrna.com/silex-cors-solution-for-options-requests/ via "></amp-social-share><amp-social-share type="gplus" width="50" height="28" aria-label="gplus"></amp-social-share><amp-social-share type="email" width="50" height="28" aria-label="email"></amp-social-share><amp-social-share type="pinterest" width="50" height="28" aria-label="pinterest" data-param-media="https://blog.mfrna.com/wp-content/uploads/2017/12/silex.png"></amp-social-share><amp-social-share type="linkedin" width="50" height="28" aria-label="linkedin"></amp-social-share><a title="whatsapp share" href="https://api.whatsapp.com/send?text=https://blog.mfrna.com/silex-cors-solution-for-options-requests/">
 			<div class="amp-social-icon">
 			    <amp-img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgOTAgOTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDkwIDkwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggaWQ9IldoYXRzQXBwIiBkPSJNOTAsNDMuODQxYzAsMjQuMjEzLTE5Ljc3OSw0My44NDEtNDQuMTgyLDQzLjg0MWMtNy43NDcsMC0xNS4wMjUtMS45OC0yMS4zNTctNS40NTVMMCw5MGw3Ljk3NS0yMy41MjIgICBjLTQuMDIzLTYuNjA2LTYuMzQtMTQuMzU0LTYuMzQtMjIuNjM3QzEuNjM1LDE5LjYyOCwyMS40MTYsMCw0NS44MTgsMEM3MC4yMjMsMCw5MCwxOS42MjgsOTAsNDMuODQxeiBNNDUuODE4LDYuOTgyICAgYy0yMC40ODQsMC0zNy4xNDYsMTYuNTM1LTM3LjE0NiwzNi44NTljMCw4LjA2NSwyLjYyOSwxNS41MzQsNy4wNzYsMjEuNjFMMTEuMTA3LDc5LjE0bDE0LjI3NS00LjUzNyAgIGM1Ljg2NSwzLjg1MSwxMi44OTEsNi4wOTcsMjAuNDM3LDYuMDk3YzIwLjQ4MSwwLDM3LjE0Ni0xNi41MzMsMzcuMTQ2LTM2Ljg1N1M2Ni4zMDEsNi45ODIsNDUuODE4LDYuOTgyeiBNNjguMTI5LDUzLjkzOCAgIGMtMC4yNzMtMC40NDctMC45OTQtMC43MTctMi4wNzYtMS4yNTRjLTEuMDg0LTAuNTM3LTYuNDEtMy4xMzgtNy40LTMuNDk1Yy0wLjk5My0wLjM1OC0xLjcxNy0wLjUzOC0yLjQzOCwwLjUzNyAgIGMtMC43MjEsMS4wNzYtMi43OTcsMy40OTUtMy40Myw0LjIxMmMtMC42MzIsMC43MTktMS4yNjMsMC44MDktMi4zNDcsMC4yNzFjLTEuMDgyLTAuNTM3LTQuNTcxLTEuNjczLTguNzA4LTUuMzMzICAgYy0zLjIxOS0yLjg0OC01LjM5My02LjM2NC02LjAyNS03LjQ0MWMtMC42MzEtMS4wNzUtMC4wNjYtMS42NTYsMC40NzUtMi4xOTFjMC40ODgtMC40ODIsMS4wODQtMS4yNTUsMS42MjUtMS44ODIgICBjMC41NDMtMC42MjgsMC43MjMtMS4wNzUsMS4wODItMS43OTNjMC4zNjMtMC43MTcsMC4xODItMS4zNDQtMC4wOS0xLjg4M2MtMC4yNy0wLjUzNy0yLjQzOC01LjgyNS0zLjM0LTcuOTc3ICAgYy0wLjkwMi0yLjE1LTEuODAzLTEuNzkyLTIuNDM2LTEuNzkyYy0wLjYzMSwwLTEuMzU0LTAuMDktMi4wNzYtMC4wOWMtMC43MjIsMC0xLjg5NiwwLjI2OS0yLjg4OSwxLjM0NCAgIGMtMC45OTIsMS4wNzYtMy43ODksMy42NzYtMy43ODksOC45NjNjMCw1LjI4OCwzLjg3OSwxMC4zOTcsNC40MjIsMTEuMTEzYzAuNTQxLDAuNzE2LDcuNDksMTEuOTIsMTguNSwxNi4yMjMgICBDNTguMiw2NS43NzEsNTguMiw2NC4zMzYsNjAuMTg2LDY0LjE1NmMxLjk4NC0wLjE3OSw2LjQwNi0yLjU5OSw3LjMxMi01LjEwN0M2OC4zOTgsNTYuNTM3LDY4LjM5OCw1NC4zODYsNjguMTI5LDUzLjkzOHoiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" width="50" height="20" alt="whatsapp"></amp-img></div>
 				</a>
-	                			<a title="line share" href="http://line.me/R/msg/text/?http://blog.mfrna.com/silex-cors-solution-for-options-requests/">
+	                			<a title="line share" href="http://line.me/R/msg/text/?https://blog.mfrna.com/silex-cors-solution-for-options-requests/">
 				<div class="amp-social-icon custom-amp-socialsharing-line">
 					<amp-img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI5Ni41MjggMjk2LjUyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjk2LjUyOCAyOTYuNTI4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPHBhdGggZD0iTTI5NS44MzgsMTE1LjM0N2wwLjAwMy0wLjAwMWwtMC4wOTItMC43NmMtMC4wMDEtMC4wMTMtMC4wMDItMC4wMjMtMC4wMDQtMC4wMzZjLTAuMDAxLTAuMDExLTAuMDAyLTAuMDIxLTAuMDA0LTAuMDMyICAgbC0wLjM0NC0yLjg1OGMtMC4wNjktMC41NzQtMC4xNDgtMS4yMjgtMC4yMzgtMS45NzRsLTAuMDcyLTAuNTk0bC0wLjE0NywwLjAxOGMtMy42MTctMjAuNTcxLTEzLjU1My00MC4wOTMtMjguOTQyLTU2Ljc2MiAgIGMtMTUuMzE3LTE2LjU4OS0zNS4yMTctMjkuNjg3LTU3LjU0OC0zNy44NzhjLTE5LjEzMy03LjAxOC0zOS40MzQtMTAuNTc3LTYwLjMzNy0xMC41NzdjLTI4LjIyLDAtNTUuNjI3LDYuNjM3LTc5LjI1NywxOS4xOTMgICBDMjMuMjg5LDQ3LjI5Ny0zLjU4NSw5MS43OTksMC4zODcsMTM2LjQ2MWMyLjA1NiwyMy4xMTEsMTEuMTEsNDUuMTEsMjYuMTg0LDYzLjYyMWMxNC4xODgsMTcuNDIzLDMzLjM4MSwzMS40ODMsNTUuNTAzLDQwLjY2ICAgYzEzLjYwMiw1LjY0MiwyNy4wNTEsOC4zMDEsNDEuMjkxLDExLjExNmwxLjY2NywwLjMzYzMuOTIxLDAuNzc2LDQuOTc1LDEuODQyLDUuMjQ3LDIuMjY0YzAuNTAzLDAuNzg0LDAuMjQsMi4zMjksMC4wMzgsMy4xOCAgIGMtMC4xODYsMC43ODUtMC4zNzgsMS41NjgtMC41NywyLjM1MmMtMS41MjksNi4yMzUtMy4xMSwxMi42ODMtMS44NjgsMTkuNzkyYzEuNDI4LDguMTcyLDYuNTMxLDEyLjg1OSwxNC4wMDEsMTIuODYgICBjMC4wMDEsMCwwLjAwMSwwLDAuMDAyLDBjOC4wMzUsMCwxNy4xOC01LjM5LDIzLjIzMS04Ljk1NmwwLjgwOC0wLjQ3NWMxNC40MzYtOC40NzgsMjguMDM2LTE4LjA0MSwzOC4yNzEtMjUuNDI1ICAgYzIyLjM5Ny0xNi4xNTksNDcuNzgzLTM0LjQ3NSw2Ni44MTUtNTguMTdDMjkwLjE3MiwxNzUuNzQ1LDI5OS4yLDE0NS4wNzgsMjk1LjgzOCwxMTUuMzQ3eiBNOTIuMzQzLDE2MC41NjFINjYuNzYxICAgYy0zLjg2NiwwLTctMy4xMzQtNy03Vjk5Ljg2NWMwLTMuODY2LDMuMTM0LTcsNy03YzMuODY2LDAsNywzLjEzNCw3LDd2NDYuNjk2aDE4LjU4MWMzLjg2NiwwLDcsMy4xMzQsNyw3ICAgQzk5LjM0MywxNTcuNDI3LDk2LjIwOSwxNjAuNTYxLDkyLjM0MywxNjAuNTYxeiBNMTE5LjAzLDE1My4zNzFjMCwzLjg2Ni0zLjEzNCw3LTcsN2MtMy44NjYsMC03LTMuMTM0LTctN1Y5OS42NzUgICBjMC0zLjg2NiwzLjEzNC03LDctN2MzLjg2NiwwLDcsMy4xMzQsNyw3VjE1My4zNzF6IE0xODIuMzA0LDE1My4zNzFjMCwzLjAzMy0xLjk1Myw1LjcyMS00LjgzOCw2LjY1OCAgIGMtMC43MTIsMC4yMzEtMS40NDEsMC4zNDMtMi4xNjEsMC4zNDNjLTIuMTk5LDAtNC4zMjMtMS4wMzktNS42NjYtMi44ODhsLTI1LjIwNy0zNC43MTd2MzAuNjA1YzAsMy44NjYtMy4xMzQsNy03LDcgICBjLTMuODY2LDAtNy0zLjEzNC03LTd2LTUyLjE2YzAtMy4wMzMsMS45NTMtNS43MjEsNC44MzgtNi42NThjMi44ODYtMC45MzYsNi4wNDUsMC4wOSw3LjgyNywyLjU0NWwyNS4yMDcsMzQuNzE3Vjk5LjY3NSAgIGMwLTMuODY2LDMuMTM0LTcsNy03YzMuODY2LDAsNywzLjEzNCw3LDdWMTUzLjM3MXogTTIzMy4zMTEsMTU5LjI2OWgtMzQuNjQ1Yy0zLjg2NiwwLTctMy4xMzQtNy03di0yNi44NDdWOTguNTczICAgYzAtMy44NjYsMy4xMzQtNyw3LTdoMzMuNTdjMy44NjYsMCw3LDMuMTM0LDcsN3MtMy4xMzQsNy03LDdoLTI2LjU3djEyLjg0OWgyMS41NjJjMy44NjYsMCw3LDMuMTM0LDcsN2MwLDMuODY2LTMuMTM0LDctNyw3ICAgaC0yMS41NjJ2MTIuODQ3aDI3LjY0NWMzLjg2NiwwLDcsMy4xMzQsNyw3UzIzNy4xNzcsMTU5LjI2OSwyMzMuMzExLDE1OS4yNjl6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" width="50" height="20" alt="line"></amp-img></div>
 			</a>
 																													
 	</div> 
-		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"http:\/\/blog.mfrna.com\/silex-cors-solution-for-options-requests\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"Silex CORS solution for OPTIONS requests","author":{"@type":"Person","name":"mfrna","image":"https:\/\/secure.gravatar.com\/avatar\/9aef19b4e302bfb911f36913c43282ed?s=50&d=mm&r=g"},"datePublished":"2017-12-28T14:54:58+00:00","dateModified":"2018-01-02T18:18:43+00:00","image":{"@type":"ImageObject","url":"http:\/\/blog.mfrna.com\/wp-content\/uploads\/2017\/12\/silex-1280x720.png","width":1280,"height":720},"description":"Recently, I have worked on a cross platform app that needed a php back end.…"}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"https:\/\/blog.mfrna.com\/silex-cors-solution-for-options-requests\/","publisher":{"@type":"Organization","name":"mfrna","logo":{"@type":"ImageObject","url":"","height":"60","width":"600"}},"headline":"Silex CORS solution for OPTIONS requests","author":{"@type":"Person","name":"mfrna","image":"https:\/\/secure.gravatar.com\/avatar\/9aef19b4e302bfb911f36913c43282ed?s=50&d=mm&r=g"},"datePublished":"2017-12-28T14:54:58+00:00","dateModified":"2018-01-02T18:18:43+00:00","image":{"@type":"ImageObject","url":"https:\/\/blog.mfrna.com\/wp-content\/uploads\/2017\/12\/silex-1280x720.png","width":1280,"height":720},"description":"Recently, I have worked on a cross platform app that needed a php back end.…"}</script><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">
 					{"vars":{"account":"UA-98475264-1","anonymizeIP":"true"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}				</script></amp-analytics></body></html>
