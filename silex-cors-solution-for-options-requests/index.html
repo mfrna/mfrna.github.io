@@ -43,17 +43,17 @@
 <p><span id="more-14"></span>To fix this, an OPTIONS route needed to be created for each of the application routes. Many providers solve this by looping through each route defined in your app and creating a corresponding OPTIONS route. Even for small apps, however, this is adding unnecessary processing and for large apps with lots of routes it is even slower.</p>
 <p>To get around this, I’ve added two bits of code to my application. The first in bootstrap/app file.</p>
 <div class="highlight">
-<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-></span><span class="na">after</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">,</span> <span class="nx">Response</span> <span class="nv">$response</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nv">$response</span><span class="o">-></span><span class="na">headers</span><span class="o">-></span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Origin'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">);</span>
-        <span class="nv">$response</span><span class="o">-></span><span class="na">headers</span><span class="o">-></span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Headers'</span><span class="p">,</span> <span class="s1">'Authorization'</span><span class="p">);</span>
+<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-&gt;</span><span class="na">after</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">,</span> <span class="nx">Response</span> <span class="nv">$response</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">headers</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Origin'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">);</span>
+        <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">headers</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">'Access-Control-Allow-Headers'</span><span class="p">,</span> <span class="s1">'Authorization'</span><span class="p">);</span>
     <span class="p">});</span></code></pre>
 </div>
 <p>What this does is add two headers to all responses after the controller has finished executing but before the response is returned. Here we’ve added the <code>Access-Control-Allow-Origin</code> header the javascript app is looking for. I’m also telling the app that sending an <code>Authorization</code> header is fine too. You can remove that line if you don’t need it.</p>
 <p>We still have an issue though, all of the <code>GET</code> and <code>POST</code> requests defined in the routes will have the correct headers, but Silex still doesn’t know what to do with the <code>OPTIONS</code> requests. Fixing that is as easy as adding the following snippet to your routes files.</p>
 <div class="highlight">
-<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-></span><span class="na">options</span><span class="p">(</span><span class="s2">"{path}"</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+<pre><code class="language-php" data-lang="php"><span class="nv">$app</span><span class="o">-&gt;</span><span class="na">options</span><span class="p">(</span><span class="s2">"{path}"</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
         <span class="k">return</span> <span class="k">new</span> <span class="nx">\Symfony\Component\HttpFoundation\JsonResponse</span><span class="p">(</span><span class="k">null</span><span class="p">,</span> <span class="mi">204</span><span class="p">);</span>
-    <span class="p">})</span><span class="o">-></span><span class="na">assert</span><span class="p">(</span><span class="s2">"path"</span><span class="p">,</span> <span class="s2">".*"</span><span class="p">);</span></code></pre>
+    <span class="p">})</span><span class="o">-&gt;</span><span class="na">assert</span><span class="p">(</span><span class="s2">"path"</span><span class="p">,</span> <span class="s2">".*"</span><span class="p">);</span></code></pre>
 </div>
 <p>All we’re doing here is matching against any <code>OPTIONS</code> requests and returning a <code>204</code> response with no content. The code we added earlier will still apply to this response so our headers are correct. If needed, you can check inside the function to see whether the URL matches a URL in your non <code>OPTIONS</code> routes.</p>
 	</div>
@@ -65,7 +65,7 @@
 				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
-<div class="gglcptch gglcptch_v2"><div id="gglcptch_recaptcha_589712310" class="gglcptch_recaptcha"></div>
+<div class="gglcptch gglcptch_v2"><div id="gglcptch_recaptcha_638962121" class="gglcptch_recaptcha"></div>
 				<noscript>
 					<div style="width: 302px;">
 						<div style="width: 302px; height: 422px; position: relative;">
